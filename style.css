@@ -1,0 +1,186 @@
+/*global*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    background-color: #020202;
+    background-image: url(./geimer/fondo01.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+header h1 {
+    margin-bottom: 5rem;
+}
+
+header h1 a {
+    font-size: 4rem;
+    color: ivory;
+}    
+
+#btnCarrito {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    top: 21.2%;
+    right: 0;
+    width: 4rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, .95);
+}
+
+
+/* ---------------------------contenedor de productos -------------------*/
+.main {
+    height: auto;
+    width: auto;
+
+    background-image: url(./geimer/fondo05.jpg);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+/*----------------------------productos -------------------------*/
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin:  2rem;
+    padding: 1rem 0;
+    border: black solid 1px;;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0rem 0rem 3rem 01rem ;
+    transition: all .5s ease-in-out;
+}
+
+.producto:hover{
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 0rem 0rem 3rem 01rem rgba(255, 255, 255, 0.274);
+}
+
+.producto--Img {
+    height: 350px;
+    width: 350px;
+}
+
+.producto--Img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.producto--Info{
+    color: rgb(154, 247, 4);
+    font-weight: 500;
+    line-height: 2rem;
+    padding: 1rem 2rem;
+}
+
+/*----------------------------------------- carrito---------------------------------*/
+
+.escondido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: -25vw;
+    top: 0;
+    height: 100vh;
+    width: 25vw;
+    padding-bottom: 5rem;
+    background-image: url(./geimer/fondo04.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    opacity: 1;
+    overflow: auto;
+    
+    transition: all .2s ease-in;
+}
+
+
+
+.escondido h3 {
+    color: blue;
+    font-size: 3rem;
+}
+
+.escondido label{
+    font-size: 2rem;
+    color: blanchedalmond;
+}
+
+.escondido label span{
+    font-weight: bolder;
+    
+}
+
+#productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    min-height: 70%;
+    width: 100%;
+    color: blanchedalmond;
+}
+
+.mostrado{
+    right: 0;
+}
+
+.carrito {
+    text-align: center;
+    width: 80%;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    color: blanchedalmond;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btnComprar {
+    height: 4rem;
+    width: 10rem;
+    background: radial-gradient(blue, white);
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    font-weight: bolder;
+
+    transition: all .9s ease;
+}
+
+.btnComprar:hover{
+    background: rgba(2, 27, 255, 0.911);
+    cursor: pointer;
+}

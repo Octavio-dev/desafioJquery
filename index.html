@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio con jQuery</title>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--estilos-->
+    <link rel="stylesheet" href="./style.css">
+    <!--js-->
+    <script src="./jQuery.js"></script>
+    <script src="./array.js" defer></script>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1 id="titulo"><a href="">Space Invaders </a></h1>
+        <a id="btnCarrito">
+            <span class="material-icons">
+                shopping_cart
+            </span> 
+            <span id="contadorBtn">0</span>
+        </a>
+    </header>
+
+    <main class="main">
+        <div id="contenedor"></div>
+    </main>
+
+    <form class="escondido">
+        <h3> mi carrito</h3>
+        <div id="productos"></div>
+        <label>Precio Total : <span id="totalCarro"> 0</span></label>
+        <input class="btnComprar" type="submit" value="COMPRAR">
+    </form>
+
+</body>
+</html>
