@@ -1,8 +1,3 @@
-/* // selector
-const contadorBtn =$("#contadorBtn")
-const totalCarro = $("#totalCarro")
-const productos = $("#productos")*/
-
 //carrito visual
 
 $("#btnCarrito").click( (e) => {    
