@@ -41,6 +41,20 @@ $(".escondido").click( (e) => {
             `
             )
         })
+
+        $("#contenedorModal").html("")
+
+        $("contenedorModal").prepend(`
+            <div class = "modal">
+                <div class = ""modalFoto>
+                    <img src = ${juego.img}>
+                </div>
+                <div class = "modalInfo">
+                    <h2>${juego.juego}</h2>
+                    <p> ${juego.precio} </p>    
+                </div>
+            </div>    
+        `)
     }
 mostrar(juegos)
 
@@ -116,7 +130,7 @@ const añadirAlCarro = (id) => {
 
 
 
-//------------------------------------------------ELIMINAR DEL CARRO y dom----------------------------------------------
+//------------------------------------------------ELIMINAR DEL CARRO y dom  ----------------------------------------------
 
 const borrarDelCarro = (id) => {
     const producto = carrito.find ((prod) => prod.id === id)
