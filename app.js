@@ -36,25 +36,40 @@ $(".escondido").click( (e) => {
                     <p>Precio: $${juego.precio}</p>
                     <p>Categoria: "${juego.categoria}"</p>
                     <button onclick="añadirAlCarro(${juego.id})"> COMPRAR </button>
+                    <button id = "abrirModal${juego.id}"> ver mas </button>
                 </div>
             </div>
             `
             )
+
+            //------------------ MODAL --------------
+            $(`#abrirModal${juego.id}`).click( () => {
+
+
+                $("#contenedorModal").html("")
+        
+                $("#contenedorModal").prepend(`
+                    <div class = "modal">
+                        <div class = ""modalFoto>
+                            <img src = ${juego.img} height = "300px">
+                        </div>
+                        <div class = "modalInfo">
+                            <h2>${juego.juego}</h2>
+                            <p> ${juego.precio} </p>
+                            <button id = "cerrar"> Cerrar </button>    
+                        </div>
+                    </div>    
+                `)
+
+                $('#cerrar').click( () => {
+                    cerrarModal()
+                })
+                            
+                abrirModal(juego.id)
+            })
+            
         })
 
-        $("#contenedorModal").html("")
-
-        $("contenedorModal").prepend(`
-            <div class = "modal">
-                <div class = ""modalFoto>
-                    <img src = ${juego.img}>
-                </div>
-                <div class = "modalInfo">
-                    <h2>${juego.juego}</h2>
-                    <p> ${juego.precio} </p>    
-                </div>
-            </div>    
-        `)
     }
 mostrar(juegos)
 
@@ -145,3 +160,25 @@ const borrarDelCarro = (id) => {
 }
 
 let carritoLS = JSON.parse(localStorage.getItem("juegos"));
+
+
+//-------------------------------------------------------ABRIR/ CERRAR MODAL -----------------------------------
+
+const abrirModal = () => {
+
+    $('#contenedorModal').show(10, () => {
+        $('#contenedorModal').css({
+            "visibility" : "visible",
+            "opacity" : 1
+        })
+    })
+}
+
+const cerrarModal = () => {
+    $('#contenedorModal').hide(10, () => {
+        $('#contenedorModal').css({
+            "visibility" : "hidden",
+            "opacity" : 0
+        })
+    })
+}
