@@ -185,6 +185,8 @@ header h1 a {
     cursor: pointer;
 }
 
+/*--------------------------- MODAL -----------------------------------------------------------*/
+
 #contenedorModal{
     display: flex;
     justify-content: center;
@@ -203,9 +205,29 @@ header h1 a {
 
 .modal{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    width: 60vw;
+    /* background-color: red; */
+    color: whitesmoke;
+}
+
+.modalFoto{
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10rem;
-    background-color: red;
-    color: whitesmoke;
+    border: solid 1px blanchedalmond;
+    height: 90%;
+    width: 40%;
+}
+
+.modalInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    border: solid 1px blanchedalmond;
+    height: 90%;
 }

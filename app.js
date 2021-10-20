@@ -50,7 +50,7 @@ $(".escondido").click( (e) => {
         
                 $("#contenedorModal").prepend(`
                     <div class = "modal">
-                        <div class = ""modalFoto>
+                        <div class = "modalFoto">
                             <img src = ${juego.img} height = "300px">
                         </div>
                         <div class = "modalInfo">
