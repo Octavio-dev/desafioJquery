@@ -55,6 +55,7 @@ $(".escondido").click( (e) => {
                         </div>
                         <div class = "modalInfo">
                             <h2>${juego.juego}</h2>
+                            <p>${juego.info}</p>
                             <p> ${juego.precio} </p>
                             <button id = "cerrar"> Cerrar </button>    
                         </div>
