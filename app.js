@@ -35,7 +35,6 @@ $(".escondido").click( (e) => {
                     <p>Juego: ${juego.juego}</p>
                     <p>Precio: $${juego.precio}</p>
                     <p>Categoria: "${juego.categoria}"</p>
-                    <button onclick="añadirAlCarro(${juego.id})"> COMPRAR </button>
                     <button id = "abrirModal${juego.id}"> ver mas </button>
                 </div>
             </div>
@@ -55,9 +54,12 @@ $(".escondido").click( (e) => {
                         </div>
                         <div class = "modalInfo">
                             <h2>${juego.juego}</h2>
-                            <p>${juego.info}</p>
-                            <p> ${juego.precio} </p>
-                            <button id = "cerrar"> Cerrar </button>    
+                            <p class = "info">${juego.info}</p>
+                            <div>
+                                <p> $:${juego.precio} </p>
+                                <button onclick="añadirAlCarro(${juego.id})"> COMPRAR </button>
+                            </div>    
+                            <button id = "cerrar"> <span class="material-icons"> close </span> </button>    
                         </div>
                     </div>    
                 `)

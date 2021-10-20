@@ -203,13 +203,19 @@ header h1 a {
     transition: all .5s ease-in;
 }
 
+#cerrar{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
 .modal{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    position: relative;
     height: 80vh;
     width: 60vw;
-    /* background-color: red; */
+    background-color: rgba(0, 0, 0, .98);
     color: whitesmoke;
 }
 
@@ -217,17 +223,28 @@ header h1 a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px blanchedalmond;
-    height: 90%;
-    width: 40%;
+    position: relative;
+    border-right: solid 1px blanchedalmond;
+    height: 100%;
+    min-width: 30%;
 }
 
 .modalInfo{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-grow: 1;
-    border: solid 1px blanchedalmond;
-    height: 90%;
+    border-left: solid 1px blanchedalmond;
+    height: 100%;
+    padding: 1rem 5rem;
+}
+
+.modalInfo h2 {
+    font-size: 4rem;
+}
+
+.info{
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
