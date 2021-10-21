@@ -211,6 +211,9 @@ header h1 a {
     width: 60vw;
     background-color: rgba(0, 0, 0, .98);
     color: whitesmoke;
+
+    opacity: 0;
+    transition: all .5s ease-in;
 }
 
 .modalFoto{

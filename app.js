@@ -169,13 +169,23 @@ let carritoLS = JSON.parse(localStorage.getItem("juegos"));
 
 const abrirModal = () => {
 
-    $('#contenedorModal').show(10, () => {
-        $('#contenedorModal').css({
-            "visibility" : "visible",
-            "opacity" : 1
+    $("#contenedorModal").show(10, () => {
+        $("#contenedorModal").css({
+            "visibility":"visible",
+            "opacity":1
         })
+    }) 
+    
+    $(".modal").animate({
+        "opacity":0,
+        "top":"3000rem"
+    },100,  () => {
+        $(".modal").animate({
+            "top":0,
+            "opacity":1
+        },300)
     })
-}
+}        
 
 const cerrarModal = () => {
     $('#contenedorModal').hide(10, () => {
