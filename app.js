@@ -35,7 +35,6 @@ $(".escondido").click( (e) => {
                     <p>Juego: ${juego.juego}</p>
                     <p>Precio: $${juego.precio}</p>
                     <p>Categoria: "${juego.categoria}"</p>
-                    <button id = "abrirModal${juego.id}"> ver mas </button>
                 </div>
             </div>
             `
@@ -53,7 +52,7 @@ $(".escondido").click( (e) => {
                             <img src = ${juego.img} height = "300px">
                         </div>
                         <div class = "modalInfo">
-                            <h2>${juego.juego}</h2>
+                            <h2>"${juego.juego}"</h2>
                             <p class = "info">${juego.info}</p>
                             <div>
                                 <p> $:${juego.precio} </p>
@@ -199,3 +198,6 @@ const cerrarModal = () => {
         })
     })
 }
+
+//---------------------------------Filtros----------------
+

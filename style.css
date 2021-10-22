@@ -5,7 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
 }
+
+/*-----------------------------------------header--------------------------------*/
 
 header{
     display: flex;
@@ -62,6 +65,7 @@ header h1 a {
     padding: 2rem 0;
     background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden;
+    padding-top: 15rem;
 }
 
 /*----------------------------productos -------------------------*/
@@ -131,7 +135,7 @@ header h1 a {
 
 
 .escondido h3 {
-    color: blue;
+    color: blanchedalmond;
     font-size: 3rem;
 }
 
