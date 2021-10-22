@@ -57,7 +57,7 @@ $(".escondido").click( (e) => {
                             <p class = "info">${juego.info}</p>
                             <div>
                                 <p> $:${juego.precio} </p>
-                                <button onclick="añadirAlCarro(${juego.id})"> COMPRAR </button>
+                                <button onclick="añadirAlCarro(${juego.id})"> Añadir al Carro </button>
                             </div>    
                             <button id = "cerrar"> <span class="material-icons"> close </span> </button>    
                         </div>
