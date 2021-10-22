@@ -27,7 +27,7 @@ $(".escondido").click( (e) => {
         
         $("#contenedor").append(
             `
-            <div class ="producto">
+            <div id ="producto${juego.id}" class="producto">
                 <div class = "producto--Img">
                     <img src = ${juego.img}>
                 </div>
@@ -42,7 +42,7 @@ $(".escondido").click( (e) => {
             )
 
             //------------------ MODAL --------------
-            $(`#abrirModal${juego.id}`).click( () => {
+            $(`#producto${juego.id}`).click( () => {
 
 
                 $("#contenedorModal").html("")
