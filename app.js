@@ -188,10 +188,14 @@ const abrirModal = () => {
 }        
 
 const cerrarModal = () => {
-    $('#contenedorModal').hide(10, () => {
-        $('#contenedorModal').css({
-            "visibility" : "hidden",
-            "opacity" : 0
+    $('.modal').animate({
+        "top":"2000rem",
+        "opacity" : 0
+    },700, () => {
+        $("#contenedorModal").animate({
+            "opacity":0
+        },50, () => {
+            $("#contenedorModal").css({"visibility":"hidden"})
         })
     })
 }
