@@ -199,5 +199,51 @@ const cerrarModal = () => {
     })
 }
 
-//---------------------------------Filtros----------------
+//---------------------------------API----------------
+const btnComprar = document.getElementsByClassName("btnComprar")[0]
+const escondido = document.getElementsByClassName("escondido")[0]
+
+btnComprar.addEventListener("click", () => {
+
+    escondido.addEventListener("submit", (e) => {
+        e.preventDefault()
+    })
+
+    finalizarCompra()
+})
+
+const finalizarCompra = () => {
+
+    let juegosApi = carrito.map( (juego) => {
+        return {
+            title: juego.juego,
+            description: juego.description,
+            picture_url: juego.img,
+            category_id: juego.id,
+            quantity: juego.cantidad,
+            currency_id: "ARS",
+            unit_price: juego.precio
+        }
+    })
+
+    fetch('https://api.mercadopago.com/checkout/preferences', {
+        method: "POST",
+        headers:{
+            Authorization: "Bearer TEST-349854619879735-102521-c1ec5b0726215c1f72bcc496b10886d9-216911495"},
+        body: JSON.stringify({
+                items : juegosApi,
+                back_urls:{
+                    succes: window.location.href,
+                    failure: window.location.href,
+                }
+            })
+            
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+
+            window.location.replace(data.init_point)
+        })
+}
 
