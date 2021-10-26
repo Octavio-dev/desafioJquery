@@ -106,15 +106,12 @@ const añadirAlCarro = (id) => {
 
 
 
-//--------------------------------------------------------------pintar en el dom---------------------------------------------
+//--------------------------------------------------------------pintar carrito en el dom---------------------------------------------
 
-
-
-    const mostrarCarro = () => {
+const mostrarCarro = () => {
         
-        if (carritoLS){
-            carrito = carritoLS
-        }
+        carrito = carritoLS
+
     
         $("#productos").empty()
     
@@ -136,13 +133,12 @@ const añadirAlCarro = (id) => {
     
             
     
-            localStorage.setItem("juegos",JSON.stringify(carrito))
+          localStorage.setItem("juegos",JSON.stringify(carrito))
             
     
         $("#contadorBtn").text(carrito.reduce((acc, prod) => acc += prod.cantidad,0)) 
         totalCarro.innerText = carrito.reduce((acc, prod) => acc += prod.precio * prod.cantidad, 0)
-    }
-
+}
 
 
 
@@ -160,8 +156,9 @@ const borrarDelCarro = (id) => {
 
     mostrarCarro()
 }
-
+//------------------------------ MUESTRO EL CARRITO ACTUALIZADO -------------------------------------------
 let carritoLS = JSON.parse(localStorage.getItem("juegos"));
+mostrarCarro()
 
 
 //-------------------------------------------------------ABRIR/ CERRAR MODAL -----------------------------------
