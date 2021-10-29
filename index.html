@@ -29,8 +29,31 @@
             <span id="contadorBtn">0</span>
         </a>
     </header>
-
     <main class="main">
+        <div class = "filtros">
+            <div class="filtro">
+                <p>Filtrar por Abc</p>
+                <select name="" id="filtroAbc">
+                    <option value="1"  selected> Random</option>
+                    <option value="2"> A - Z</option>
+                    <option value="3"> Z - A</option>
+                </select>
+            </div>
+            <div class="filtro">
+                <p>Filtrar por precio</p>
+                <select name="" id="filtroPrecio">
+                    <option value="1"  selected> All</option>
+                    <option value="2"> 0 - 2500</option>
+                    <option value="3"> 2500 - 5000</option>
+                    <option value="4"> +5000 </option>
+                </select>
+            </div>
+            <div class="filtro">
+                <p>buscar manualmente</p>
+                <input type="text" name="" id="filtroBuscar" placeholder="Buscar">
+            </div>
+        </div>
+        
         <div id="contenedor"></div>
     </main>
 
