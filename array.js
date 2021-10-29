@@ -48,22 +48,22 @@ cupheadInfo = "Cuphead es un juego de acción clásico estilo 'dispara y corre' 
 //-----------------------------------array de juegos------------------
 
 const juegos = [
-    new Juego ("Dark Souls", 1500, "accion, Exploracion", 01, "./geimer/juego01.jpg", darkSoulsInfo),
-    new Juego ("Elden Ring", 3200, "accion, aventura", 02,"./geimer/juego02.jpg", eldenRingInfo ),
-    new Juego ("Sekiro", 2500,"Accion", 03,"./geimer/juego03.jpg", sekiroInfo ),
-    new Juego ("God of War", 4000,"Accion, aventura", 04, "./geimer/juego04.jpg", godOfWarInfo ) ,
-    new Juego ("Shadow of the collosus", 1200,"Estrategia, Exploracion", 05, "./geimer/juego05.jpg", shadowOfTheCollosusInfo),
-    new Juego ("Resident Evil 2", 1200,"Survival Horror", 06,"./geimer/juego06.jpg",residentEvil2Info ),
-    new Juego ("Resident Evil: Village", 2900,"Survival Horror, Accion", 07, "./geimer/juego07.jpg", residentEvilVillageInfo),
-    new Juego ("Bloodborne", 3500, "Souls, Accion, Exploracion", 08, "./geimer/juego08.jpg", bloodborneInfo),
-    new Juego ("Demos Souls", 5900, "Accion, Exploracion", 09,"./geimer/juego09.jpg", demonSoulsInfo),
-    new Juego ("Dark souls 2", 800, "Accion, Souls", 10, "./geimer/juego10.jpg", darkSouls2Info),
-    new Juego ("Dark souls 3", 1200, "Accion, Souls", 11, "./geimer/juego11.jpg", darkSouls3Info),
-    new Juego ("Hollow Knight", 300, "Metroidvania", 12, "./geimer/juego12.jpg", hollowKnightInfo),
-    new Juego ("Silent Hills : Homecoming", 699, "Survival Horror, Terror Psicologico ", 13, "./geimer/juego13.jpg", silentHillsInfo),
-    new Juego ("Red Dead Redemption 2", 1200, "Accion, Aventura, Mundo Abierto", 14, "./geimer/juego14.jpg", redDeadRedemptionInfo),
-    new Juego ("Back 4 Blood", 3400, "Zombies, FPS, Cooperativo", 15, "./geimer/juego15.jpg", back4BloodInfo),
-    new Juego ("CupHead", 500, "SoulsLike, 2D, Plataformas", 16, "./geimer/juego16.jpg", cupheadInfo),
+    new Juego ("DARK SOULS", 1500, "accion, Exploracion", 01, "./geimer/juego01.jpg", darkSoulsInfo),
+    new Juego ("ELDEN RING", 3200, "accion, aventura", 02,"./geimer/juego02.jpg", eldenRingInfo ),
+    new Juego ("SEKIRO", 2500,"Accion", 03,"./geimer/juego03.jpg", sekiroInfo ),
+    new Juego ("GOD OF WAR", 4000,"Accion, aventura", 04, "./geimer/juego04.jpg", godOfWarInfo ) ,
+    new Juego ("SHADDOW OF THE COLLOSUS", 1200,"Estrategia, Exploracion", 05, "./geimer/juego05.jpg", shadowOfTheCollosusInfo),
+    new Juego ("RESIDENT EVIL 2", 1200,"Survival Horror", 06,"./geimer/juego06.jpg",residentEvil2Info ),
+    new Juego ("RESIDENT EVIL : VILLAGE", 2900,"Survival Horror, Accion", 07, "./geimer/juego07.jpg", residentEvilVillageInfo),
+    new Juego ("BLOODBORNE", 3500, "Souls, Accion, Exploracion", 08, "./geimer/juego08.jpg", bloodborneInfo),
+    new Juego ("DEMON SOULS", 5900, "Accion, Exploracion", 09,"./geimer/juego09.jpg", demonSoulsInfo),
+    new Juego ("DARK SOULS 2", 800, "Accion, Souls", 10, "./geimer/juego10.jpg", darkSouls2Info),
+    new Juego ("DARK SOULS 3", 1200, "Accion, Souls", 11, "./geimer/juego11.jpg", darkSouls3Info),
+    new Juego ("HOLLOW KNIGHT", 300, "Metroidvania", 12, "./geimer/juego12.jpg", hollowKnightInfo),
+    new Juego ("SILENT HILLS : HOMECOMING", 699, "Survival Horror, Terror Psicologico ", 13, "./geimer/juego13.jpg", silentHillsInfo),
+    new Juego ("RED DEAD REDEMPTION 2", 1200, "Accion, Aventura, Mundo Abierto", 14, "./geimer/juego14.jpg", redDeadRedemptionInfo),
+    new Juego ("BACK 4 BLOOD", 3400, "Zombies, FPS, Cooperativo", 15, "./geimer/juego15.jpg", back4BloodInfo),
+    new Juego ("CULHEAD", 500, "SoulsLike, 2D, Plataformas", 16, "./geimer/juego16.jpg", cupheadInfo),
 ]
 
 //carrito

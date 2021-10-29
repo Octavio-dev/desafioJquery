@@ -48,7 +48,7 @@ header h1 a {
 
 /* ------------------------------ Filtros -------------------------------*/
 
-.filtros{
+.Buscar{
     display: flex;
     flex-direction: column;
     justify-content: center;

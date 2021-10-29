@@ -73,8 +73,8 @@ $(".escondido").click( (e) => {
         })
 
     }
-mostrar(juegos)
 
+    mostrar(juegos)
 
 
 
@@ -196,6 +196,46 @@ const cerrarModal = () => {
     })
 }
 
+// ------------------------------------ FILTROS ------------------
+
+const filtro = () => {
+
+    let filtrado = []
+
+    switch ($("#filtroPrecio").val()){
+        case "1" : 
+            filtrado = juegos
+            break;
+        case "2":
+            filtrado = juegos.filter((juego) => juego.precio <= 2500)
+            break;
+        case "3":
+            filtrado = juegos.filter((juego) => juego.precio > 2500 && juego.precio <= 5000)
+            break;
+        case "4":
+            filtrado = juegos.filter((juego) => juego.precio > 5000)
+            break;        
+
+    }
+
+    mostrar(filtrado)
+}
+
+$("#filtroPrecio").change(() => {
+    filtro()
+})
+
+// ----------------BUSCADOR ----------------
+
+const buscador = (buscar) => {
+
+    return juegos.filter((juego) => juego.juego.trim().includes(buscar.toUpperCase()))
+}
+
+$("#filtroBuscar").keypress( () => {
+    const buscar = $("#filtroBuscar").val()
+    mostrar(buscador(buscar))
+})
 //---------------------------------API----------------
 const btnComprar = document.getElementsByClassName("btnComprar")[0]
 const escondido = document.getElementsByClassName("escondido")[0]
