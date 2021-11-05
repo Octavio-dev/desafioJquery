@@ -19,7 +19,7 @@
     <script src="./app.js" defer></script>
 </head>
 <body>
-    
+    <!--Header-->
     <header>
         <h1 id="titulo"><a href="">Space Invaders </a></h1>
         <a id="btnCarrito">
@@ -29,14 +29,16 @@
             <span id="contadorBtn">0</span>
         </a>
     </header>
+    <!--Contenedor General-->
     <main class="main">
+        <!--Filtros-->
         <div class = "Buscar">
             <div class="filtro">
-                <p>Filtrar por Abc</p>
-                <select name="" id="filtroAbc">
-                    <option value="1"  selected> Random</option>
-                    <option value="2"> A - Z</option>
-                    <option value="3"> Z - A</option>
+                <p>Ordenar por precio</p>
+                <select name="" id="ordenarPrecio">
+                    <option value="1"  selected disabled> Random</option>
+                    <option value="2"> De menos a mayor</option>
+                    <option value="3"> De mayor a menor</option>
                 </select>
             </div>
             <div class="filtro">
@@ -53,17 +55,17 @@
                 <input type="text" name="" id="filtroBuscar" placeholder="Buscar">
             </div>
         </div>
-        
+        <!--Productos-->
         <div id="contenedor"></div>
     </main>
-
+        <!--Carrito escondido-->
     <form class="escondido">
         <h3> mi carrito</h3>
         <div id="productos"></div>
         <label>Precio Total : <span id="totalCarro"> 0</span></label>
         <input class="btnComprar" type="submit" value="COMPRAR">
     </form>
-
+    <!--Modal-->
     <div id="contenedorModal">
         
     </div>

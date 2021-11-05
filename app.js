@@ -218,6 +218,14 @@ const filtro = () => {
 
     }
 
+    filtrado.sort((a,b) => {
+        if($("#ordenarPrecio").val() == "2"){
+            return a.precio - b.precio
+        } else if ($("#ordenarPrecio").val() == "3"){
+            return b.precio - a.precio
+        }
+    })
+
     mostrar(filtrado)
 }
 
@@ -236,6 +244,23 @@ $("#filtroBuscar").keypress( () => {
     const buscar = $("#filtroBuscar").val()
     mostrar(buscador(buscar))
 })
+
+// ------------------- ORDENAR POR precio -------------
+
+$("#ordenarPrecio").change( () => {
+    
+    filtro()
+})
+
+
+
+
+
+
+
+
+
+
 //---------------------------------API----------------
 const btnComprar = document.getElementsByClassName("btnComprar")[0]
 const escondido = document.getElementsByClassName("escondido")[0]
