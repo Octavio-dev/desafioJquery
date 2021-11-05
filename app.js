@@ -253,10 +253,21 @@ $("#ordenarPrecio").change( () => {
 })
 
 
+// ---------------------- mostrar Filtros ------------
 
+$("#mostrarFiltros").click( () => {
 
+    $(".buscar").slideDown("slow")
+    $("#mostrarFiltros").css({"display" : "none"})
 
+})
+    
+$("#cerrarFiltros").click( () => {
 
+    $(".buscar").slideUp("slow")
+    $("#mostrarFiltros").css({"display" : "block"})
+
+})
 
 
 

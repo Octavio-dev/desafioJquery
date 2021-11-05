@@ -31,8 +31,9 @@
     </header>
     <!--Contenedor General-->
     <main class="main">
+        <p id="mostrarFiltros"><span class="material-icons">expand_more</span></p>
         <!--Filtros-->
-        <div class = "Buscar">
+        <div class = "buscar">
             <div class="filtro">
                 <p>Ordenar por precio</p>
                 <select name="" id="ordenarPrecio">
@@ -42,7 +43,7 @@
                 </select>
             </div>
             <div class="filtro">
-                <p>Filtrar por precio</p>
+                <p>Rango de precio</p>
                 <select name="" id="filtroPrecio">
                     <option value="1"  selected> All</option>
                     <option value="2"> 0 - 2500</option>
@@ -54,6 +55,7 @@
                 <p>buscar manualmente</p>
                 <input type="text" name="" id="filtroBuscar" placeholder="Buscar">
             </div>
+            <p id="cerrarFiltros"><span class="material-icons">expand_less</span></p>
         </div>
         <!--Productos-->
         <div id="contenedor"></div>

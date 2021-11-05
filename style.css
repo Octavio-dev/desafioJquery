@@ -8,6 +8,9 @@
     font-family: 'Bebas Neue', cursive;
 }
 
+span {
+    cursor: pointer;
+}
 /*-----------------------------------------header--------------------------------*/
 
 header{
@@ -48,8 +51,8 @@ header h1 a {
 
 /* ------------------------------ Filtros -------------------------------*/
 
-.Buscar{
-    display: flex;
+.buscar{
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,6 +66,8 @@ header h1 a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 #filtroPrecio{
@@ -78,7 +83,6 @@ header h1 a {
 }
 
 #filtroBuscar{
-    margin-bottom: 1rem;
     width: 10rem;
     text-align: center;
 }
@@ -92,6 +96,17 @@ header h1 a {
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
+}
+
+#mostrarFiltros {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: blanchedalmond;
+}
+
+#cerrarFiltros{
+    text-align: center;
+    color: blanchedalmond;
 }
 
 #contenedor{
