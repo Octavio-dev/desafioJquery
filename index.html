@@ -34,13 +34,23 @@
         <p id="mostrarFiltros"><span class="material-icons">expand_more</span></p>
         <!--Filtros-->
         <div class = "buscar">
-            <div class="filtro">
-                <p>Ordenar por precio</p>
-                <select name="" id="ordenarPrecio">
-                    <option value="1"  selected disabled> Random</option>
-                    <option value="2"> De menos a mayor</option>
-                    <option value="3"> De mayor a menor</option>
-                </select>
+            <div class="ordenar">
+                <div class="orden">
+                    <p>Ordenar por precio</p>
+                    <select name="precios" id="ordenarPrecio">
+                        <option value="1"  selected disabled> Random</option>
+                        <option value="2"> De menos a mayor</option>
+                        <option value="3"> De mayor a menor</option>
+                    </select>
+                </div>
+                <div class="orden">
+                    <p>Ordenar por ABC</p>
+                    <select name="abecedario" id="ordenarAbc">
+                        <option value="1"  selected disabled> Random</option>
+                        <option value="2"> A - Z</option>
+                        <option value="3"> Z - A</option>
+                    </select>
+                </div>
             </div>
             <div class="filtro">
                 <p>Rango de precio</p>
