@@ -61,22 +61,6 @@ header h1 a {
     color: blanchedalmond;
 }
 
-.ordenar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.orden{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3rem;
-}
-
 .filtro{
     display: flex;
     flex-direction: column;
