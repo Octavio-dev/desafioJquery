@@ -49,6 +49,26 @@ header h1 a {
     cursor: pointer;
 }
 
+#btnDia{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    border-radius: 3rem;
+    background: aliceblue;
+}
+
+#btnNoche{
+    position: fixed;
+    top: 1rem;
+    left: 4rem;
+    background:none;
+    border: none;
+    border-radius: 3rem;
+    background: aliceblue;
+}
+
 /* ------------------------------ Filtros -------------------------------*/
 
 .buscar{
@@ -104,13 +124,22 @@ header h1 a {
     color: blanchedalmond;
 }
 
-#contenedor{
+#contenedorNoche{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 5rem 0;
     min-height: 59vh;
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+.contenedorDia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5rem 0;
+    min-height: 59vh;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 /*----------------------------productos -------------------------*/
@@ -125,7 +154,7 @@ header h1 a {
     padding-top: 2rem;
     border: black solid 1px;;
     background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0rem 0rem 3rem 01rem ;
+    box-shadow: 0rem 0rem 3rem 1rem ;
     transition: all .5s ease-in-out;
 }
 

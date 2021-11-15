@@ -14,13 +14,59 @@ $(".escondido").click( (e) => {
     e.stopPropagation()
 })
 
+//----------------------------- btn Modo claro ------------
+
+$("#btnDia").click( () => {
+    $("#mostrarFiltros").css({
+        "background-color":"rgba(255, 255, 255, 0.9)",
+        "color":"#000"
+    })
+    $(".buscar").css({
+        "background-color":"rgba(255, 255, 255, 0.9)",
+        "color":"#000"
+    })
+    $("#contenedorNoche").css({
+        "background-color":"rgba(255, 255, 255, 0.9)"
+    })
+    $(".producto").css({
+        "border":"none",
+        "box-shadow": "0rem 0rem 4rem 0"
+    })
+    $(".producto--Info").css({
+        "color":"#000"
+    })
+})
+
+// ---------------------------btn modo Oscuro ---------------------
+$("#btnNoche").click( () => {
+    $("#mostrarFiltros").css({
+        "background-color":"rgba(0, 0, 0, 0.9)",
+        "color":"blanchedalmond"
+    })
+    $(".buscar").css({
+        "background-color":"rgba(0, 0, 0, 0.9)",
+        "color":"blanchedalmond"
+    })
+    $("#contenedorNoche").css({
+        "background-color":"rgba(0, 0, 0, 0.9)"
+    })
+    $(".producto").css({
+        "border":"black solid 1px",
+        "box-shadow": "0rem 0rem 3rem 1rem"
+    })
+    $(".producto--Info").css({
+        "color":"blanchedalmond"
+    })
+})
+
+
 //-----------------------------------------------mostrar array de productos al html------------------------------------------------------
     const mostrar = (arr) => {
-        $("#contenedor").empty()
+        $("#contenedorNoche").empty()
 
         arr.forEach( (juego) => {
         
-        $("#contenedor").append(
+        $("#contenedorNoche").append(
             `
             <div id ="producto${juego.id}" class="producto">
                 <div class = "producto--Img">
