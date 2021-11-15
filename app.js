@@ -14,11 +14,6 @@ $(".escondido").click( (e) => {
     e.stopPropagation()
 })
 
-
-
-
-
-
 //-----------------------------------------------mostrar array de productos al html------------------------------------------------------
     const mostrar = (arr) => {
         $("#contenedor").empty()
@@ -55,8 +50,8 @@ $(".escondido").click( (e) => {
                             <h2>"${juego.juego}"</h2>
                             <p class = "info">${juego.info}</p>
                             <div>
-                                <p> $:${juego.precio} </p>
-                                <button onclick="añadirAlCarro(${juego.id})"> Añadir al Carro </button>
+                                <p class = "precio"> $:${juego.precio} </p>
+                                <button class = "comprar" onclick="añadirAlCarro(${juego.id})"> Añadir al Carro </button>
                             </div>    
                             <button id = "cerrar"> <span class="material-icons"> close </span> </button>    
                         </div>
@@ -75,8 +70,6 @@ $(".escondido").click( (e) => {
     }
 
     mostrar(juegos)
-
-
 
 // -----------------------------------------------------agregar al carro ----------------------------------------------------------------
 
@@ -98,21 +91,15 @@ const añadirAlCarro = (id) => {
         })
     }
 
-    
-
     mostrarCarro()
 }
-
-
-
 
 //--------------------------------------------------------------pintar carrito en el dom---------------------------------------------
 
 const mostrarCarro = () => {
         
         carrito = carritoLS
-
-    
+   
         $("#productos").empty()
     
             carrito.forEach((prod) => {
@@ -130,18 +117,12 @@ const mostrarCarro = () => {
                     `
                 )                                                    
             })
-    
-            
-    
-          localStorage.setItem("juegos",JSON.stringify(carrito))
-            
+        
+          localStorage.setItem("juegos",JSON.stringify(carrito))           
     
         $("#contadorBtn").text(carrito.reduce((acc, prod) => acc += prod.cantidad,0)) 
         totalCarro.innerText = carrito.reduce((acc, prod) => acc += prod.precio * prod.cantidad, 0)
 }
-
-
-
 
 //------------------------------------------------ELIMINAR DEL CARRO y dom  ----------------------------------------------
 
@@ -172,6 +153,7 @@ const abrirModal = () => {
         })
     }) 
     
+    //animacion al abrir modal
     $(".modal").animate({
         "opacity":0,
         "top":"3000rem"
@@ -268,8 +250,6 @@ $("#cerrarFiltros").click( () => {
     $("#mostrarFiltros").css({"display" : "block"})
 
 })
-
-
 
 
 //---------------------------------API----------------
